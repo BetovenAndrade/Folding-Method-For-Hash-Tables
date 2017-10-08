@@ -1,15 +1,16 @@
 /*
 	Author: Betoven Oliveira de Andrade
 	Description: Folding Method (or dobra in Brazilian-PT) for Hash Tables in Java
+	First commit in GitHub: 08/10/2017 
 */
 public class HashFunctions {
 	public int dobra(int[] vetor, int tableSize){
 		String i="";
-			//Concatenando a chave em uma única String
+			//Concatenate the key in single String
 			for(int cont=0; cont<vetor.length; ++cont){
 				i+=vetor[cont];
 			}
-			//codição básica, para parada da recursividade
+			//basic contition to stop recursion
 			if(Integer.parseInt(i)<tableSize){
 					return Integer.parseInt(i);
 			}
